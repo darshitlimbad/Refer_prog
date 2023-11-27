@@ -1,0 +1,158 @@
+#header nav ul li:nth-child(1){
+    font-size: 20px;
+    padding: 4px 15px;
+    border-bottom: 3px solid blue;
+}
+
+#header nav ul li:nth-child(1) a {
+    color: blue;
+}
+
+.display_points {
+    display: flex;
+    float: right;
+    width: auto;
+    margin: 5px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.display_points p {
+    margin: 0;
+    padding: 0 5px;
+}
+
+.display_points img {
+    height: 25px;
+    width: 25px;
+    
+}
+
+.permission {
+    display: none;
+}
+
+#img_swiper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px;
+    width: 96%;
+}
+
+#img_swiper .swipe_left , .swipe_right {
+    display: flex;
+    position: relative;
+    place-content:center;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    font-weight: 900;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 25px;
+    opacity: 100%;
+}
+
+.swiper_nav {
+    display: block;
+    height: 30px;
+
+}
+
+.swiper_nav ul {
+    display: grid;
+    justify-items: center;
+    rotate: -90deg;
+    transform: translateX(55px);
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#img_swiper .swipe_left:hover  , .swipe_right:hover {
+    opacity: 50%;
+}
+
+#img_swiper .img_1 , .img_2 , .img_3 , .img_4 {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    border: 3px inset #696969;
+}
+
+#img_swiper .img_1 {
+    display: block;
+}
+#img_swiper .img_2 , .img_3 , .img_4 {
+    display: none;
+}
+
+#img_swiper img{
+    height: 10cm;
+    width: 100%;
+}
+
+#intro {
+   display: flex;
+   justify-content: space-evenly;
+   margin: auto;
+   padding: 15px;
+   background-color: #696969;
+   border: 2px solid #898989;
+   border-radius: 25px;
+}
+
+#intro .intro_child {
+    display: flex;
+    align-items: center;
+}
+#intro .box {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    height: 250px;
+    width: 60%;
+    padding: 30px 25px;
+    margin: 10px;
+    color: aliceblue;
+    border-radius: 25px;
+    background-color: black;
+}
+#intro h1, #intro .intro_child h3{
+    color: gold;
+    text-shadow: 1px 1px 2px aliceblue;
+}
+
+#intro p {
+    text-align: justify;
+    font-size: large;
+    color: aliceblue;
+}
+
+@media screen and (max-width:600px) {
+    #img_swiper .img_1 , .img_2 , .img_3 , .img_4 {
+        width: 70%;
+    }
+
+    #intro {
+        display: block;
+    }
+    #intro .box {
+        width: auto;
+        font-size:14px;
+    }
+    #img_swiper {
+        margin:15px;
+        width: 90%;
+    }
+    #img_swiper img{
+        height: 5cm;
+    }
+
+    .swiper_nav {
+    }
+
+    #intro .intro_child {
+        display: block;
+    }
+}

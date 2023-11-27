@@ -1,0 +1,55 @@
+/* profile css */
+
+.container {
+	height:auto;
+	width:50%;
+	color:white;
+	border:3px solid aliceblue;
+	box-shadow:0px 0px 0px 20px #696969;
+	border-radius:25px;
+	padding:20px;
+	margin:50px auto;
+	display:block;
+}
+
+
+.container .row {
+	display:flex;
+	flex-wrap:wrap;
+	backdrop-filter:blur(5px);
+	border-bottom:0.5px solid violet;
+	box-shadow: 1px 1px 2px violet;
+	border-radius: 10px;
+}
+
+.container .row .col-30 {
+	width:30%;
+	font-size:25px;
+	color:#696969;
+	shadow:2px 2px 3px #898989;
+	padding:5px;
+	margin:3px;
+}
+.container .row .col-60 {
+	width:60%;
+	font-size:20px;
+	padding:5px;
+	margin:3px;
+}
+
+@media screen and (max-width:600px) {
+	.container {
+		width:70%;
+		text-align:center;
+	}
+	
+	.container .row .col-30 {
+		font-size:10px;
+		padding: 2px;
+	}
+	.container .row .col-60 {
+		font-size:10px;
+		padding: 2px;
+		width: 55%;
+	}
+}

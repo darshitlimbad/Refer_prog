@@ -1,0 +1,223 @@
+body {
+    background-color: gray;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.font {
+    font-family: 'Libre Baskerville', serif , arial;
+}
+
+.prevent_select {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.btn{
+    background-color: rgb(115, 115, 223);
+    color:white;
+    height: 20px;
+    padding: 10px 20px;
+    margin:20px;
+    border-radius: 100px !important;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+
+#header{
+    display: inline-flex;
+    height: 90px;
+	width:100%;
+    font-size: 12px;
+    position: relative;
+	color:white;
+    align-items: center;
+}
+
+
+
+#header .logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    padding: 10px 25px;
+}
+
+#header .logo img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+#header #menu_icon {
+    display: none;
+}
+
+
+#header nav{
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: right;
+    float: right;
+    right: 40px;
+    padding-top: 20px;
+}
+
+#header nav ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+#header nav li{
+    padding:0 10px;    
+
+}
+
+#header nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header nav .m_logout {
+    display: none;
+}
+
+/* '#header nav li:nth-child()' this class is in their pages css*/
+
+#header nav li:hover{
+
+    font-size: 20px;
+    padding: 3px 15px;
+    border-bottom: 3px solid blue;
+}
+
+#header nav li:hover > a{
+    color: blue;
+
+}
+
+#header nav img{
+	height:35px;
+	width:35px;
+	border-radius:25px;
+	position:relative;
+	bottom:10px;
+	left:20px;
+	
+}
+
+.profile {
+    display:none;
+	position:fixed;
+	padding: 15px;
+	right: 5px;
+	top: 60px;
+	z-index:1;
+	height:auto;
+	width:auto;
+	border-radius:20px;
+	background-color:#403e3e;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: text-shadow 0.5s;
+    font-weight: bolder;
+    font-size: larger;
+    opacity: 80%;
+}
+
+.profile a {
+    color: red;
+    text-decoration: none;
+    transition: border-bottom 0.6s , text-shadow 0.6s;
+    transition: border-bottom cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.profile a:hover {
+    border-bottom: 2px solid red;
+    text-shadow: 2px 2px 3px red;
+}
+
+
+.profile_img:hover + .profile  , .profile:hover{
+  display: block;
+}
+
+@media screen and (max-width:600px) {
+    #header nav {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        position:fixed;
+        float: unset;
+        place-content: center;
+        width: 80%;
+        top: 20%;
+        right: 10%;
+        height:auto;
+        margin: auto;
+
+    }
+
+    #header nav ul{
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+    #header nav li{
+        list-style-type: upper-roman;
+        margin: 20px;
+    }
+
+    #header nav img {
+        position: unset;
+    }
+
+    #header nav .m_logout {
+        text-decoration: none;
+        color: red;
+        display: flex;
+        position: relative;
+        justify-content: end;
+        align-content: center;
+    }
+
+    #header .profile {
+        display: none !important;
+       
+    }
+
+    #header #menu_icon {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+        
+    }
+
+    #header #menu_icon .bar_1 , .bar_2 , .bar_3 {
+        width: 35px;
+        height: 5px;
+        background-color: #403e3e;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar_1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .change .bar_2 {opacity: 0;}
+    
+    .change .bar_3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    
+}
