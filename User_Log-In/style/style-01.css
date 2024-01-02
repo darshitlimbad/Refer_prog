@@ -65,7 +65,7 @@ h1{
 }
 
 .input-field input:focus+label,input:not(:placeholder-shown)+label {
-	transform: translateX(-7px) translateY(-25px);
+	transform: translate(-7px , -25px);
 	opacity: 100%;
   	font-size: 15px;
 	color: #1873e8;
