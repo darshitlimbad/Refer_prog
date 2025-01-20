@@ -45,7 +45,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `unm`, `fname`, `mono`, `email`, `pass`, `points`, `tier`, `ref_cd`, `p_ref_cd`) VALUES
-(1, 'Darshit_Limbad', 'Darshit Limbad', 2147483647, 'darshitlimbad555@gmail.com', 'darshit', 999999, 'CROWN', 'WIZ82839', NULL),
+(1, 'Darshit_Limbad', 'Darshit Limbad', 2147483647, 'da@gmail.com', 'darshit', 999999, 'CROWN', 'WIZ82839', NULL),
 (11, 'hello_world', 'helooooo', 2147483647, 'hello@gma.com', 'pass', 150, 'NO TIER', 'WIZ197612', NULL),
 (12, 'test_test', 'test', 2147483647, 'test@gmail.com', 'test', 1400, 'BRONZE', 'WIZ961235', 'WIZ197612');
 

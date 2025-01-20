@@ -3,7 +3,7 @@
     session_start();
 
     if(!isset($_SESSION['unm'])) {
-        header('location: /refer_prog/User_Log-In/Loginpage.php');
+        header('location: /User_Log-In/Loginpage.php');
     }
 	
 	$unm = $_SESSION["unm"];
@@ -56,17 +56,17 @@
 <body>
 <header id="header" style="background-image: url('img/bg.jpg');">
 
-    <div class="logo font" onclick="window.location.assign('/refer_prog/dashboard/')">
+    <div class="logo font" onclick="window.location.assign('/dashboard/')">
         <img src="img/logo.jpg" alt="Logo" class="prevent_select">
         <h2>MONEY RAIN</h2>
     </div>
 
     <nav id="header_nav" >
         <ul>
-            <li><a href="/refer_prog/dashboard">HOME</a></li>
-            <li><a href="/refer_prog/dashboard/refer.php">REFER</a></li>
-            <li><a href="/refer_prog/dashboard/help.php">HELP</a></li>
-			<img src="img/profile.jpg" onclick="window.location.assign('/refer_prog/dashboard/profile.php')" class="profile_img prevent_select">
+            <li><a href="/dashboard">HOME</a></li>
+            <li><a href="/dashboard/refer.php">REFER</a></li>
+            <li><a href="/dashboard/help.php">HELP</a></li>
+			<img src="img/profile.jpg" onclick="window.location.assign('/dashboard/profile.php')" class="profile_img prevent_select">
 				<div class="profile">
 					<table cellspacing="5px">
 						<tr>

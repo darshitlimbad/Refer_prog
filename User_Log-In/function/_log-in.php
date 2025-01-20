@@ -18,10 +18,10 @@
     $count = mysqli_num_rows($sql_fire);
 
     if($count == 0) {
-        header("location: /Refer_prog/User_Log-In/Loginpage.php?ERROR=404");
+        header("location: /User_Log-In/Loginpage.php?ERROR=404");
     }
     else if($row['pass'] != $pass ) {
-        header("location: /Refer_prog/User_Log-In/Loginpage.php?ERROR=PASSWORD_INCORRECT&unm=$unm");
+        header("location: /User_Log-In/Loginpage.php?ERROR=PASSWORD_INCORRECT&unm=$unm");
     }
     else {
         session_start();
@@ -36,6 +36,6 @@
         }
 
         // header('location: /');
-        header('location: /refer_prog/Dashboard/');
+        header('location: /Dashboard/');
     }
 ?>

@@ -38,8 +38,10 @@
         <div class="text">
 
             <p>OR You can share this URL to your friend for refer :</p>
-			<input type="text" id="URL" style="width:60%;color:white;" value="http://localhost/refer_prog/User_Log-In/Signinpage.php?REF_CD=<?php echo $details['ref_cd'];?>" DISABLED>
-			
+			<input type="text" id="URL" style="width:60%;color:white;"  DISABLED>
+			<script>
+                document.getElementById("URL").value = document.location.origin + "/User_Log-In/Loginpage.php?ref_cd=" + "<?php echo $details['ref_cd']; ?>";
+            </script>
             <div class='copyTip'>
 
 				<button name='copy' id='copy'>

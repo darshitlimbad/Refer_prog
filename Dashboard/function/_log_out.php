@@ -6,5 +6,5 @@
     session_destroy();
 
     // header('location: /');
-    header('location: /refer_prog/Dashboard/');
+    header('location: /Dashboard/');
 ?>
